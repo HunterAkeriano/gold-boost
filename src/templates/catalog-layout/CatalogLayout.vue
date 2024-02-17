@@ -3,7 +3,9 @@
 </script>
 
 <template>
-<h2>опа</h2>
+  <main class="main">
+    <slot />
+  </main>
 </template>
 
 <style scoped>

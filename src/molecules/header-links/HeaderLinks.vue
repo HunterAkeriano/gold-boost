@@ -3,9 +3,9 @@
 </script>
 
 <template>
-<h2>опа</h2>
+
 </template>
 
 <style scoped>
-
+@import "header-links.styl";
 </style>

@@ -1,7 +1,12 @@
-<script setup></script>
+<script setup>
+  import { RouterView } from 'vue-router'
+  import AppLayout from '@/templates/app-layout/AppLayout.vue'
+</script>
 
 <template>
-  <div class="wrapper"></div>
+  <app-layout>
+    <router-view />
+  </app-layout>
 </template>
 
-<style scoped></style>
+<style lang="stylus"></style>
