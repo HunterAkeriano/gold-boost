@@ -1,9 +1,11 @@
 <script setup>
+import { useI18n } from 'vue-i18n';
 
+const { t } = useI18n();
 </script>
 
 <template>
-<h2>опа</h2>
+<h2>{{t('welcome')}}</h2>
 </template>
 
 <style scoped>

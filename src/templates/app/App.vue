@@ -9,4 +9,6 @@
   </app-layout>
 </template>
 
-<style lang="stylus"></style>
+<style lang="scss">
+@import "@/assets/scss/base.scss";
+</style>
