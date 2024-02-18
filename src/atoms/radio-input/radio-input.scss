@@ -1,0 +1,43 @@
+@import '@/assets/scss/variables/variables';
+
+.radio-input {
+  label {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+  }
+
+  input {
+    height: 14px;
+    aspect-ratio: 1;
+    border: 2px solid $radio-blue;
+    padding: 2px;
+    background: radial-gradient(farthest-side, $gold 94%, #0000) 50%/0 0 no-repeat
+    content-box;
+    border-radius: 50%;
+    appearance: none;
+    cursor: pointer;
+    font-size: inherit;
+    transition: 0.3s;
+  }
+
+  input:checked {
+    background-size: 100% 100%;
+  }
+
+  &_background {
+    padding: 18px 0;
+    background: $background-blue;
+    color: $main-white
+  }
+  
+  &:hover {
+    @media (hover: hover) {
+      input {
+        border: 2px solid $main-white;
+      }
+    }
+  }
+}

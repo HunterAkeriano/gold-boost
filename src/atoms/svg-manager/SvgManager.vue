@@ -1,5 +1,5 @@
 <script setup>
- defineProps({
+  defineProps({
     icon: {
       type: String,
       required: true,
@@ -12,5 +12,3 @@
     <use :href="icon" />
   </svg>
 </template>
-
-<style scoped></style>

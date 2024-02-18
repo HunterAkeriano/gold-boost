@@ -1,7 +1,7 @@
 <script setup>
   import { RouterView } from 'vue-router'
   import AppLayout from '@/templates/app-layout/AppLayout.vue'
-  import IconsManager from "@/organisms/icon-manager/IconsManager.vue";
+  import IconsManager from "@/molecules/icon-manager/IconsManager.vue";
 </script>
 
 <template>
