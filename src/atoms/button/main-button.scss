@@ -1,0 +1,48 @@
+@import '@/assets/scss/variables/variables';
+
+.main-button {
+  cursor: pointer;
+  font-size: $--14;
+  font-weight: $--700;
+  color: $main-white;
+  text-transform: uppercase;
+  border-radius: 50px;
+  background: $opacity;
+  border: 1px solid $gray-border;
+  padding: 18px 0;
+  width: 100%;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+
+  &:hover {
+    @media (hover: hover) {
+      color: $black-text;
+      background: $gold;
+      border: 1px solid $gold;
+    }
+  }
+
+  &_shadow {
+    background: $gold-gradient;
+    box-shadow: 0 5px 15px 0 $gold-shadow;
+    transition:
+      background 0.2s ease,
+      color 0.2s ease,
+      box-shadow 0.2s ease;
+    border: 0;
+    color: $black-text;
+
+    &:hover {
+      @media (hover: hover) {
+        background: $gold-gradient;
+        box-shadow: 0 10px 20px 0 $gold-shadow-lite;
+        border: 0;
+      }
+    }
+
+    &:active {
+      background: $gold-gradient-click;
+    }
+  }
+}

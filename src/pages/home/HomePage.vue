@@ -1,19 +1,11 @@
 <script setup>
-import { useI18n } from 'vue-i18n';
-
-const { t, locale, availableLocales } = useI18n();
-
-const changeLanguage = (newLocale) => {
-    locale.value = newLocale;
-};
+import SvgManager from "@/atoms/svg-manager/SvgManager.vue";
 </script>
 
 <template>
-<h2>{{t('welcome')}}</h2>
-  <button @click="changeLanguage('en')">English</button>
-  <button @click="changeLanguage('ua')">Українська</button>
+
+  <h2>привет</h2>
+  <SvgManager :icon="'#goal-swiper-top'"/>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>
