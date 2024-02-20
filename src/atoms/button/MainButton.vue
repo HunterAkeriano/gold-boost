@@ -1,22 +1,13 @@
 <script setup>
-  defineProps({
-    shadow: {
-      type: Boolean,
-      default: false,
-    },
-    arrow : {
-      type: Boolean,
-      default: false,
-    }
-  })
+  defineProps(['type'])
 </script>
 
 <template>
   <button
     class="main-button"
     :class="{
-      'main-button_shadow': shadow,
-      'main-button_arrow': arrow,
+      'main-button_shadow': type === 'shadow',
+      'main-button_arrow': type === 'arrow',
     }"
   >
     <slot />
