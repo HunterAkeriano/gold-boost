@@ -45,4 +45,37 @@
       background: $gold-gradient-click;
     }
   }
+
+  &_arrow {
+    position: relative;
+    outline: 1px solid $radio-blue;
+    border-radius: 100px;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    background: $opacity;
+    transition: background .25s ease, outline .25s ease;
+
+    &:hover {
+      background: $main-white;
+      border: 0;
+      outline: 1px solid $main-white;
+    }
+
+    &:active {
+      background: $gold;
+      outline: 1px solid $gold;
+    }
+
+    &_left {
+      transform: scaleX(-1);
+    }
+
+    svg {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
 }

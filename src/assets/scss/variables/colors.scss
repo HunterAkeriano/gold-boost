@@ -9,6 +9,7 @@ $main-white: #FFFFFF;
 
 //gray
 $gray-border: rgba(255, 255, 255, 0.3);
+$gray-links: rgba(255, 255, 255, 0.4);
 
 //gold
 $gold: #FFBD00;
@@ -16,6 +17,8 @@ $gold-gradient: linear-gradient(93.03deg, #ffbc19 -3.34%, #fee92c 102.31%);
 $gold-gradient-click:  linear-gradient(93.03deg, #ECA700 46.63%, #FCEA4C 94.69%);
 $gold-shadow: rgba(255, 188, 0, 0.3);
 $gold-shadow-lite: rgba(0, 0, 0, 0.2);
+$gold-links: linear-gradient(93.03deg, #FFBC19 -3.34%, #FEE92C 102.31%);
+
 
 //blue
 $radio-blue: rgba(81, 83, 119, 1);
